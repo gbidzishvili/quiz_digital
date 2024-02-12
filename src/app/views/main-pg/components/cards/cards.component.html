@@ -4,7 +4,7 @@
       <mat-card-title>{{ result.title }}</mat-card-title>
       <mat-card-subtitle>{{ result.titleType }}</mat-card-subtitle>
       <img
-        *ngIf="result.image.url"
+        *ngIf="result?.image?.url"
         mat-card-md-image
         src="{{ result.image.url }}"
         alt="Image of a Shiba Inu"
